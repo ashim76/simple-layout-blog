@@ -1,0 +1,46 @@
+             body {
+                 font-size: 30px;
+             }
+             
+             .wrapper {
+                 background: rgb(70, 64, 64);
+                 height: 50rem;
+                 padding: 10px;
+                 display: grid;
+                 gap: 5px;
+                 grid-template-columns: auto;
+                 grid-template-areas: "item1 item1 item1" "item2 item2 item2 ""item3 item3 item4" "item5 item5 item5 ";
+             }
+             
+             .wrapper>div {
+                 display: grid;
+                 justify-content: center;
+                 align-items: center;
+                 font-weight: bold;
+             }
+             
+             .item1 {
+                 background: linear-gradient(to bottom, #4faece 40%, #ff99cc 100%);
+                 grid-area: item1;
+             }
+             
+             .item2 {
+                 background: linear-gradient(to top left, #3452b3 40%, #ee8c54 100%);
+                 grid-area: item2;
+             }
+             
+             .item3 {
+                 background: linear-gradient(to bottom, #e40fae 40%, #ccb5c0 100%);
+                 grid-area: item3;
+                 height: 43rem;
+             }
+             
+             .item4 {
+                 background: linear-gradient(to bottom, #33ccff 40%, #ff99cc 100%);
+                 grid-area: item4;
+             }
+             
+             .item5 {
+                 background: linear-gradient(to bottom, #f34b08 40%, #ca7628 100%);
+                 grid-area: item5;
+             }
